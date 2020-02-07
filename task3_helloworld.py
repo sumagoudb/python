@@ -36,7 +36,7 @@ class myHandler(BaseHTTPRequestHandler):
             self.send_header('Content-type','text/html')
             self.end_headers()
             # Send the html message
-            self.wfile.write("Hey you are are suppose to use '/helloworld' or '/helloworld?FirstnameMiddlenameLastname'")
+            self.wfile.write("Hey you are are suppose to use '/helloworld' or '/helloworld?name=FirstnameMiddlenameLastname'")
             return
 
 parser = argparse.ArgumentParser(description='Process input.')
