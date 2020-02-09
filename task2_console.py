@@ -22,12 +22,12 @@ from collections import OrderedDict
 
 sorted_members = sorted(members.items(), key=lambda i: i)
 
-# show the initial letter of the name of the endocoder, then surname, then
+# show the initial letter of the name of the endocoder, urllib2then surname, then
 # title and finally bio, sorted surname. Show exclusively that information, extracted from the website, and in
 # that sorting.
 
 for member,info in sorted_members:
-    print(member[:1] + "\t" + member  + "\t" + info['desc'])
+    print(member[:1] + "\t" + member + "\t" + info['title'] + "\t" + info['desc'])
 
 
              
